@@ -23,6 +23,11 @@ namespace UserMaintenance
             listBox1.ValueMember = "ID";
             listBox1.DisplayMember = "FullName";
 
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             var u = new UserMaintenance.Entities.User()
             {
                 LastName = textBox1.Text,
@@ -30,7 +35,5 @@ namespace UserMaintenance
             };
             users.Add(u);
         }
-
-        
     }
 }
