@@ -22,6 +22,7 @@ namespace UserMaintenance
             listBox1.DataSource = users;
             listBox1.ValueMember = "ID";
             listBox1.DisplayMember = "FullName";
+            button2.Text = Resource1.WriteInFile;
 
             var u = new UserMaintenance.Entities.User()
             {
